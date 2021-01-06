@@ -10,7 +10,8 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/gocelery/gocelery"
+	"gocelery"
+
 	"github.com/gomodule/redigo/redis"
 )
 
@@ -44,7 +45,7 @@ func main() {
 	)
 
 	// prepare arguments
-	taskName := "worker.add"
+	taskName := "worker.add_reflect"
 	argA := rand.Intn(10)
 	argB := rand.Intn(10)
 
